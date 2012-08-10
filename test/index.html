@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8" />
+        <title>TinyChartLib</title>
+        <script src="../vendor/raphael-2.1.0.min.js"></script>
+        <script src="../vendor/d3-2.min.js"></script>
+        <script src="../tinychartlib.js"></script>
+        <script src="balloonstatchart.js"></script>
+        <link rel="stylesheet" type="text/css" href="../tinychartlib.css" />
+        <link rel="stylesheet" type="text/css" href="balloonstatchart.css" />
+    </head>
+    <body>
+        <input type="button" onclick="display.bound( 0, .25 )" value="Ouvrir à 25% (gauche)" />
+        <input type="button" onclick="display.bound( .25, .75 )" value="Ouvrir à 50% (centre)" />
+        <input type="button" onclick="display.bound( .75, 1 )" value="Ouvrir à 25% (droite)" />
+        <br />
+    </body>
+    <script>
+        var answersData = [ ], quotesData = [ ];
+        for ( var t = 0; t < 20; ++ t )
+            answersData.push( [ new Date( 1000 * 60 * 60 * 24 * 7 * t ), Math.random( ) ] ),
+                quotesData.push( [ new Date( 1000 * 60 * 60 * 24 * 7 * t ), Math.random( ) ] );
+
+        var chart = new BalloonStatChart( )
+            .quotesData( quotesData )
+            .votesData( answersData );
+
+        var display = new SelectorDisplay( );
+        document.body.appendChild( display.node );
+        display.chart( chart, {
+            top : { ticks : [ 10 ] }
+        } );
+    </script>
+</html>

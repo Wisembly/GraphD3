@@ -1,0 +1,11 @@
+.chart .quotes.path {
+    stroke: orange;
+}
+
+.chart .quotes.pointer {
+    fill: orange;
+}
+
+.chart .quotes.tooltip.background {
+    stroke: orange;
+}

@@ -1,0 +1,62 @@
+.container.bottom {
+    position: relative;
+}
+
+.container.bottom .grid.vertical, .container.bottom .hitbox {
+    display: none;
+}
+
+.selector, .selection {
+    position: absolute;
+    top: 0;
+}
+
+.tooltip {
+    pointer-events: none;
+}
+
+.selector, .selection {
+    z-index: 1;
+}
+
+.selector {
+    background: lightblue;
+    width: 10px;
+}
+
+.selector.left {
+    margin-left: -10px;
+}
+
+.selection {
+    background: lightblue;
+    opacity: .2;
+}
+
+.grid {
+    stroke: whitesmoke;
+}
+
+.label {
+    fill: darkgrey;
+}
+
+.path {
+    stroke-width: 2px;
+    stroke: lightblue;
+}
+
+.pointer {
+    fill: lightblue;
+}
+
+.tooltip.text {
+    font-weight: bold !important;
+    fill: black;
+}
+
+.tooltip.background {
+    stroke-width: 2px;
+    stroke: lightblue;
+    fill: white;
+}
