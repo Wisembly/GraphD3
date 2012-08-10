@@ -37,3 +37,12 @@ Notre petite bibliothèque permet de faire deux types de graphes :
 ## API
 
 Consultez le fichier d'exemple, c'est probablement le plus parlant !
+
+## Licence
+
+    * -------------------------------------------------------------------------------
+    * "THE BEER/PIZZA-WARE LICENSE" (Revision 42):
+    * <nison.mael@gmail.com> wrote these files. As long as you retain this notice you
+    * can do whatever you want with this stuff. If we meet some day, and you think
+    * this stuff is worth it, you can buy me a beer or a pizza in return Maël Nison
+    * -------------------------------------------------------------------------------
